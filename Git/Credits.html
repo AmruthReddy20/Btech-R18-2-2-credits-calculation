@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R18 (2-2) Credit Calculation</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="javaScript.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+<body  >
+  <div class="high">
+  <h1 class="top"> JNTUH BTech ( R<sub>18</sub> ) </h1>
+  <h2 class="top">2-2 Semister Credits Calculation</h2>
+     </div>
+     <form name=cal  onsubmit="return fun()">
+   	    <h2> Enter Credits :</h2>
+          <img id="imge" src="https://www.jntufastupdates.com/wp-content/uploads/2017/03/jntuh-r16-grades.png" alt="Grades and Grade Points"><br/>
+          <br/>
+          <div >
+             <label value="dm" >Discrete Mathematics:</label><br/>
+   	 <input id="id1"  onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"  type="Number" maxlength="2" name="dm" value="dm" /><br/>
+   	<label value="befa">Business Economics & Financial Analysis:</label><br/> <input id="id2" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" value="befa" type="Number" name="befa" /></br> 
+   	<label class="lbl">Operating Systems :</label><br/> <input id="id3" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="os" /></br>
+   	<label>Database Management Systems :</label><br/> <input id="id4" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="dbms" /><br/>
+   	<label>Java Programming:</label> <br/><input id="id5" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="js" /></br>
+   	<label>Operating Systems Lab:</label><br/> <input id="id6" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="oslab" /><br/>
+   	<label>Database Management Systems Lab:</label><br/> <input id="id7" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="dbmslab" /><br/>
+   	<label>Java Programming Lab :</label><br/> <input id="id8" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)" type="Number" name="javalab" /></br>
+   	</div>
+    <input id="btn" type="button" name="calculate" value="Calculate" onclick="fun(this)">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="btn" type="button" name="printer" value="Print" onclick="load()"><br/></br>
+     <b id="credits" > </br>
+   </form>
+    
+  
+</body>
+</html>
